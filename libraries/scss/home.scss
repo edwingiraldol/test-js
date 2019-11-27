@@ -1,4 +1,32 @@
-.home{
-	display: none;
-	background-image: red;
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+body{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+
+}
+.main-menu{
+	display: flex;
+	li{
+		margin: auto 10px;
+		&.item{
+			color: #9c9ba1;
+			font-size: 19px;
+		}
+		&.logo{
+		font-size: 37px;
+		margin-right: 42px;
+		}
+	}
 }
