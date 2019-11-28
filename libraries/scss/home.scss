@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Poppins', sans-serif;
 }
 ul{
 	list-style: none;
@@ -19,6 +21,7 @@ header{
 
 .user{
 	display:flex;
+	height: 42px;
 }
 .primary-button{
 	padding: 0 31px;
@@ -66,7 +69,7 @@ header{
 			margin: 23px 0;
 		}
 		.primary-button{
-			width: 72px;
+			width: 100px;
 		}
 	}
 	.working{
