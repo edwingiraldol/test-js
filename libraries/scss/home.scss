@@ -16,9 +16,30 @@ header{
 	padding: 50px 0;
 
 }
+
+.user{
+	display:flex;
+}
+.primary-button{
+	padding: 0 31px;
+	background-color: #32cdd4;
+	color: white;
+	border-radius: 50px;
+	cursor: pointer;
+	line-height: 42px;
+}
+.secondary-button{
+	padding: 0 31px;
+	background-color: white;
+	color: #9c9ba1;
+	border-radius: 50px;
+	cursor: pointer;
+	line-height: 42px;
+}
 .main-menu{
 	display: flex;
 	li{
+		cursor: pointer;
 		margin: auto 10px;
 		&.item{
 			color: #9c9ba1;
@@ -28,5 +49,56 @@ header{
 		font-size: 37px;
 		margin-right: 42px;
 		}
+	}
+}
+
+.center{
+	display: flex;
+	justify-content: space-between;
+	.title-descr{
+		width: 60%;
+		h1{
+			font-size: 75px;
+		}
+		p{
+			font-size: 24px;
+			color: #9c9ba1;
+			margin: 23px 0;
+		}
+		.primary-button{
+			width: 72px;
+		}
+	}
+	.working{
+		width: 40%;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.search{
+	background-image: url("../../images/bg-shorten-desktop.svg");
+	background-color: #3a3053;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+	border-radius: 9px;
+	input{
+		margin: auto 15px;
+		width: 77%;
+		height: 37%;
+		border-radius: 9px;
+		text-indent: 20px;
+	}
+
+	input::-webkit-input-placeholder {
+		margin-left: 50px;
+		font-size: 20px;
+	}
+	.primary-button{
+		margin: auto 0;
+		border-radius: 9px;
 	}
 }
