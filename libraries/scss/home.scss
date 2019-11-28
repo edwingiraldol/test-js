@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+$gray: hsl(0, 0%, 75%);
+$violet: hsl(257, 7%, 63%);
+$blue: hsl(255, 11%, 22%);
+$violet-very-dark: hsl(260, 8%, 14%);
+$white: hsl(0, 0%, 100%);
+
+$red: hsl(0, 87%, 67%);
+
+$cyan: hsl(180, 66%, 49%);
+$violet-dark: hsl(257, 27%, 26%);
+
+
 *{
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
+	Font-size: 18px
 }
 ul{
 	list-style: none;
@@ -25,16 +39,16 @@ header{
 }
 .primary-button{
 	padding: 0 31px;
-	background-color: #32cdd4;
-	color: white;
+	background-color: $cyan;
+	color: $white;
 	border-radius: 50px;
 	cursor: pointer;
 	line-height: 42px;
 }
 .secondary-button{
 	padding: 0 31px;
-	background-color: white;
-	color: #9c9ba1;
+	background-color: $white;
+	color: $gray;
 	border-radius: 50px;
 	cursor: pointer;
 	line-height: 42px;
@@ -45,12 +59,13 @@ header{
 		cursor: pointer;
 		margin: auto 10px;
 		&.item{
-			color: #9c9ba1;
+			color: $gray;
 			font-size: 19px;
 		}
 		&.logo{
 		font-size: 37px;
 		margin-right: 42px;
+		font-weight: bolder;
 		}
 	}
 }
@@ -62,14 +77,15 @@ header{
 		width: 60%;
 		h1{
 			font-size: 75px;
+			font-weight: bolder;
 		}
 		p{
 			font-size: 24px;
-			color: #9c9ba1;
+			color: $gray;
 			margin: 23px 0;
 		}
 		.primary-button{
-			width: 100px;
+			width: 102px;
 		}
 	}
 	.working{
@@ -82,7 +98,7 @@ header{
 
 .search{
 	background-image: url("../../images/bg-shorten-desktop.svg");
-	background-color: #3a3053;
+	background-color: $violet-dark;
 	height: 100px;
 	display: flex;
 	justify-content: center;
@@ -103,5 +119,34 @@ header{
 	.primary-button{
 		margin: auto 0;
 		border-radius: 9px;
+	}
+}
+
+.result.actived{
+	background-color: $violet;
+	padding: 20px;
+	border-radius: 9px;
+	.item{
+		line-height: 42px;
+		border-radius: 9px;
+		padding: 13px;
+		background-color: $white;
+		display: flex;
+		justify-content: space-between;
+		margin: 27px 0;
+		.actions{
+			display: flex;
+			.short-link{
+				margin-right: 32px;
+				color: $cyan;
+
+			}
+			.copy{
+				border-radius: 9px;
+			}
+			.copied{
+				background-color: $violet-dark;
+			}
+		}
 	}
 }
