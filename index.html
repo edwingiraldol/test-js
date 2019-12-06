@@ -40,8 +40,11 @@
 </div>
 <div class="search">
 
-        <input id="input-link" type="text" placeholder="Shorten a link here..">
-        <div class="primary-button generate-link">Get started</div>
+    <div class="search-box">
+        <input id="input-link" type="text" placeholder="Shorten a link here.." name="input_link" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$">
+        <span class="error">No se pudo obtener la URL</span>
+    </div>
+    <div class="primary-button generate-link">Get started</div>
 
 </div>
 

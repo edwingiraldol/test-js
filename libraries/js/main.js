@@ -25,6 +25,9 @@
             data: form,
             success: function(data) {
 
+                $('.search span.error').hide();
+                $('.search .search-box').removeClass('error');
+
                 $('.result').addClass('actived');
 
 
@@ -50,7 +53,8 @@
                 });
             },
             error: function() {
-            alert('no se pudo obtener la URL');
+                $('.search span.error').show();
+                $('.search .search-box').addClass('error');
         }
         });
     });
