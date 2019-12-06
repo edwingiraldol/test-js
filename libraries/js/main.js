@@ -1,9 +1,8 @@
 (function() {
     let dest = 'https://rel.ink/api/links/';
 
-    //generando link
 
-
+    //si existe almacenado en el localstorage las urls entonces las mostramos en el result
     if (window.localStorage.getItem('urlsa')) {
 
         urls = JSON.parse(window.localStorage.getItem('urlsa'));
@@ -16,6 +15,7 @@
 
 
     }
+    //generamos el shorted link una vez damos click al boton
     $('.search .generate-link').click(function(){
         var url = $('.search #input-link').val();
         var form =  'url='+url;
